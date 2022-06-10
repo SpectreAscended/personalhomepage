@@ -37,7 +37,7 @@
   html {
     font-size: 25%;
   }
-  main {
+  .main {
     padding: 0 2rem;
     margin-bottom: 0;
   }
@@ -96,6 +96,10 @@
 
     .nav-bar__item {
       font-size: 2rem;
+    }
+
+    .main {
+      padding: 0 2rem;
     }
   }
 }
