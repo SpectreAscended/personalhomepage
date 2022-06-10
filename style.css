@@ -1,15 +1,5 @@
-::root {
-  --color-background: #120e0c;
-
-
-  --margin-top-small: margin-top: 2rem;
-  --margin-top-medium: margin-top: 6rem;
-  --margin-top-large: margin-top: 10rem;
-  --margin-top-huge: margin-top: 15rem;
-  --margin-bottom-small: margin-bottom: 2rem;
-  --margin-bottom-medium: margin-bottom: 6rem;
-  --margin-bottom-large: margin-bottom: 10rem;
-  --margin-bottom-huge: margin-bottom: 15rem;
+:root {
+  --color-background: #271e17;
 }
 
 *,
@@ -20,10 +10,9 @@
   box-sizing: inherit;
 }
 
-
 ::selection {
   background-color: #333;
-  color: #aaa;
+  color: #bbbfbe;
 }
 
 html {
@@ -34,25 +23,25 @@ html {
 body {
   font-family: 'Michroma', sans-serif;
   /* background-color: #22180f; */
-  background-color: #271E17;
-  color: #fff;
+  background-color: var(--color-background);
+  color: #efefef;
 }
 
 .heading-primary {
   font-family: 'Limelight', sans-serif;
-  font-size: 8.5rem;
+  font-size: 7.5rem;
   text-transform: uppercase;
   /* letter-spacing: 0.3rem; */
   font-weight: 400;
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 400;
 }
 
 .main {
-  background-image: url(./assets/matterhorn-background-cropped.png),
+  background-image: url(./assets/matterhorn-background-cropped-compressed.jpg),
     linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.53));
   background-blend-mode: darken;
   background-size: contain;
@@ -65,7 +54,7 @@ body {
 
 /* Header */
 
-.section__header{
+.section__header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,8 +62,8 @@ body {
 }
 
 .logo {
-  width: 58rem;
-  margin-top: 35rem;
+  width: 46rem;
+  margin-top: 25rem;
   margin-bottom: 1rem;
   user-select: none;
 }
@@ -99,10 +88,9 @@ body {
   list-style: none;
   display: flex;
   /* gap: 2rem; */
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
   border: solid 2px #fff;
- 
 }
 
 .nav-bar__item {
@@ -123,7 +111,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(255,255,255, 0.25);
+  background-color: rgba(255, 255, 255, 0.25);
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
   transform-origin: right;
@@ -149,7 +137,7 @@ body {
 }
 
 .nav-bar__item:hover a:link {
-  transform: scale(1.07)
+  transform: scale(1.07);
 }
 
 /* .nav-bar__item:hover {
@@ -163,9 +151,7 @@ body {
 }
 
 .section__about-text {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   padding-top: 18rem;
   border-top: solid 2px #fff;
 }
-
-
