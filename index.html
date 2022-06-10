@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -28,16 +29,25 @@
           <h1 class="heading-primary">Cory Pollard</h1>
           <h2 class="heading-secondary">Front end web developer</h2>
         </div>
-        <nav class="nav header__nav">
+        <nav class="nav header__nav sticky">
           <ul class="nav-bar">
-            <li class="nav-bar__item nav-bar__item--about">About</li>
-            <li class="nav-bar__item nav-bar__item--skills">Skills</li>
-            <li class="nav-bar__item nav-bar__item--projects">Projects</li>
-            <li class="nav-bar__item nav-bar__item--contact">Contact</li>
+            <li class="nav-bar__item nav-bar__item--about">
+              <a href="#section-about">About</a>
+            </li>
+            <li class="nav-bar__item nav-bar__item--skills">
+              <a href="#">Skills</a>
+            </li>
+            <li class="nav-bar__item nav-bar__item--projects">
+              <a href="#">Projects</a>
+            </li>
+            <li class="nav-bar__item nav-bar__item--contact">
+              <a href="#">Contact</a>
+            </li>
           </ul>
         </nav>
       </header>
-      <div class="section section__about">
+
+      <div class="section section__about" id="section-about">
         <p class="general-text section__about-text">
           My name is Cory Pollard. I am a front end web developer. I began my
           journey into the field of web development in 2021 as a self taught

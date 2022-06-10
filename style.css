@@ -28,11 +28,13 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Michroma', sans-serif;
-  background-color: #120e0c;
+  /* background-color: #22180f; */
+  background-color: #271E17;
   color: #fff;
 }
 
@@ -74,6 +76,7 @@ body {
   width: 58rem;
   margin-top: 35rem;
   margin-bottom: 1rem;
+  user-select: none;
 }
 
 .logo__img {
@@ -82,8 +85,14 @@ body {
 
 /* Nav bar */
 
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
 .header__nav {
-  margin-top: 4rem
+  margin: 4rem auto;
+  display: inline-block;
 }
 
 .nav-bar {
@@ -93,22 +102,63 @@ body {
   font-size: 2.6rem;
   text-transform: uppercase;
   border: solid 2px #fff;
+ 
 }
 
 .nav-bar__item {
   border-right: solid 2px #fff;
   padding: 1rem 2rem;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.1)
+  background-color: rgba(255, 255, 255, 0.1);
+  /* transition: all 450ms; */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.nav-bar__item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255,255,255, 0.25);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: right;
+  z-index: -1;
+}
+
+.nav-bar__item:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .nav-bar__item:last-child {
   border-right: none;
 }
 
+.nav-bar__item a:link,
+.nav-bar__item a:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 250ms;
+  /* backface-visibility: hidden; */
+}
+
+.nav-bar__item:hover a:link {
+  transform: scale(1.07)
+}
+
+/* .nav-bar__item:hover {
+  background-color: rgba(255,255,255, 0.25)
+} */
+
 .section__about {
   max-width: 120rem;
-  margin: 90rem auto;
+  margin: 90rem auto 0 auto;
   line-height: 1.7;
 }
 
@@ -118,59 +168,4 @@ body {
   border-top: solid 2px #fff;
 }
 
-@media (max-width: 1500px) {
-  .main {
-    background-position-y: -30rem;
-  }
-  .logo {
-    margin-top: 20rem;
-  }
-}
 
-@media (max-width: 1200px) {
-  .main {
-    background-position-y: -25rem;
-  }
-
-  .logo {
-    margin-top: 12rem;
-  }
-}
-@media (max-width: 1000px) {
-  .main {
-    background-position-y: -15rem;
-  }
-}
-@media (max-width: 900px) {
-  html {
-    font-size: 55%;
-  }
-  .main {
-    background-position-y: -15rem;
-  }
-}
-
-@media (max-width: 750px) {
-  html {
-    font-size: 25%;
-  }
-  .main {
-    background-position-y: -10rem;
-  }
-
-  .logo {
-    margin-top: 50rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .logo {
-    margin-top: 30rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .logo {
-    margin-top: 25rem;
-  }
-}
