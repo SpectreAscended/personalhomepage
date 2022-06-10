@@ -75,5 +75,27 @@
 @media (max-width: 500px) {
   .logo {
     margin-top: 15rem;
+    margin-bottom: 2rem;
+  }
+
+  .heading-primary {
+    margin-bottom: 1rem;
+  }
+
+  .heading-secondary {
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 310px) {
+    .heading-primary {
+      font-size: 5rem;
+    }
+    .heading-secondary {
+      font-size: 2rem;
+    }
+
+    .nav-bar__item {
+      font-size: 2rem;
+    }
   }
 }
