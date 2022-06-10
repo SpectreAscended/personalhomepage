@@ -22,7 +22,6 @@ html {
 
 body {
   font-family: 'Michroma', sans-serif;
-  /* background-color: #22180f; */
   background-color: var(--color-background);
   color: #efefef;
 }
@@ -31,7 +30,6 @@ body {
   font-family: 'Limelight', sans-serif;
   font-size: 7.5rem;
   text-transform: uppercase;
-  /* letter-spacing: 0.3rem; */
   font-weight: 400;
   animation: moveInLeft 1000ms ease-in-out;
 }
@@ -75,6 +73,9 @@ body {
     opacity: 0;
     transform: translateY(30rem);
   }
+  /* 80% {
+    transform: translateY(-0.5rem);
+  } */
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -93,7 +94,7 @@ body {
 }
 
 .main {
-  background-image: url(./assets/matterhorn-background-cropped-compressed.jpg),
+  background-image: url(./assets/matterhorn-background-cropped-super-compressed.jpg),
     linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.53));
   background-blend-mode: darken;
   background-size: contain;
