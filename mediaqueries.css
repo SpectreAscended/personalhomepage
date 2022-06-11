@@ -72,6 +72,13 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .main {
+    background-image: url('./assets/matterhorn-background-cropped-super-compressed--small.jpg')
+      linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.53));
+  }
+}
+
 @media (max-width: 500px) {
   .logo {
     margin-top: 15rem;
