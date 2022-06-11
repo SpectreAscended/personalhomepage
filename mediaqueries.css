@@ -35,7 +35,7 @@
 
 @media (max-width: 600px) {
   html {
-    font-size: 25%;
+    font-size: 27%;
   }
   .main {
     padding: 0 2rem;
@@ -55,9 +55,10 @@
   }
 
   .nav-bar__item {
-    padding: 2rem 5rem;
+    padding: 2rem 7.5rem;
     border-right: none;
     border-bottom: solid 2px #fff;
+    letter-spacing: 0.7rem;
   }
 
   .nav-bar__item:last-child {
