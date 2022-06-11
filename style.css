@@ -91,6 +91,20 @@ body {
   }
 }
 
+@keyframes moveInBottomLarge {
+  0% {
+    opacity: 0;
+    transform: translateY(80rem);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -127,7 +141,6 @@ body {
   background-repeat: no-repeat;
   height: 5000px;
   padding: 0 20rem;
-  overflow: hidden;
 }
 
 /* Header */
@@ -137,6 +150,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 
 .logo {
@@ -180,8 +194,16 @@ body {
   top: 0;
 }
 
-.header__nav {
+.nav-wrapper {
+  position: sticky;
+  top: 0;
   margin: 4rem auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header__nav {
   display: inline-block;
   animation: moveInBottom 750ms ease-in-out 750ms;
   animation-fill-mode: backwards;
@@ -194,6 +216,8 @@ body {
   font-size: 2.2rem;
   text-transform: uppercase;
   border: solid 2px var(--color-white);
+  -webkit-backdrop-filter: blur(0.8rem);
+  backdrop-filter: blur(0.8rem);
 }
 
 .nav-bar__item {
@@ -201,10 +225,12 @@ body {
   padding: 1rem 2rem;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.1);
+
   /* transition: all 450ms; */
   position: relative;
   z-index: 1;
   overflow: hidden;
+  letter-spacing: 0.4rem;
 }
 
 .nav-bar__item::after {
@@ -251,6 +277,7 @@ body {
 
 .section__about {
   max-width: 120rem;
+  padding-top: 6rem;
   margin: 90rem auto 0 auto;
   line-height: 1.7;
 }
@@ -286,4 +313,13 @@ body {
     opacity: 1;
     transform: translateX(0) scaleY(1);
   }
+}
+
+.spectre-logo__box {
+  max-width: 25rem;
+  margin-top: 50rem;
+}
+
+.spectre-logo__img {
+  width: 100%;
 }

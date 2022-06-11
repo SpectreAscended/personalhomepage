@@ -50,8 +50,19 @@
     font-size: 2.5rem;
   }
 
+  .nav-wrapper {
+    position: static;
+  }
+
+  .header__nav {
+    animation: moveInBottomLarge 750ms ease-out 750ms;
+    animation-fill-mode: backwards;
+  }
+
   .nav-bar {
     flex-direction: column;
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
   }
 
   .nav-bar__item {
