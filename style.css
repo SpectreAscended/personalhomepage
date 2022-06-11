@@ -278,7 +278,7 @@ body {
 .section__about {
   max-width: 120rem;
   padding-top: 6rem;
-  margin: 90rem auto 0 auto;
+  margin: 40rem auto 0 auto;
   line-height: 1.7;
 }
 
@@ -317,7 +317,7 @@ body {
 
 .spectre-logo__box {
   max-width: 25rem;
-  margin-top: 50rem;
+  margin: 60rem auto 0;
 }
 
 .spectre-logo__img {
