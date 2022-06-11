@@ -109,11 +109,8 @@ body {
 @keyframes rotateIn {
   0% {
     opacity: 0;
-    transform: rotate(-980deg);
+    transform: rotate(-380deg);
   }
-  /* 80% {
-    transform: rotate(15deg);
-  } */
   100% {
     opacity: 1;
     transform: rotate(0);
