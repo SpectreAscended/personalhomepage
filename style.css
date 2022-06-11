@@ -41,6 +41,41 @@ body {
   font-family: 'Michroma', sans-serif;
   background-color: var(--color-background);
   color: var(--color-white);
+  position: relative;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.disable-select {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.to-top {
+  position: fixed;
+  display: inline-block;
+  bottom: 2rem;
+  right: 2rem;
+  height: 5.5rem;
+  width: 5.5rem;
+  transform: rotate(180deg);
+  background-image: url('./assets/tree-logo--inner.svg');
+  background-size: contain;
+  z-index: 1000;
+  cursor: pointer;
+  border-radius: 100vw;
+  transition: all 350ms;
+}
+
+.to-top:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: rotate(300deg);
 }
 
 .heading-primary {
@@ -292,10 +327,6 @@ body {
 .nav-bar__item:hover a:link {
   transform: scale(1.07);
 }
-
-/* .nav-bar__item:hover {
-  background-color: rgba(255,255,255, 0.25)
-} */
 
 /* SECTION -- ABOUT */
 

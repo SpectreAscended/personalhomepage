@@ -37,6 +37,11 @@
   html {
     font-size: 27%;
   }
+
+  .to-top {
+    display: none;
+  }
+
   .main {
     padding: 0 2rem;
     margin-bottom: 0;
