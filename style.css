@@ -102,6 +102,10 @@ body {
   /* text-shadow: 4px 4px 0 #000; */
 }
 
+.general-text {
+  letter-spacing: 0.25rem;
+}
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -184,6 +188,18 @@ body {
   }
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  80% {
+    transform: rotate(1000deg);
+  }
+  100% {
+    transform: rotate(980deg);
+  }
+}
+
 .main {
   background-image: url(./assets/matterhorn-background-cropped-super-compressed.jpg),
     linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.53));
@@ -213,6 +229,7 @@ body {
   user-select: none;
   animation: fadeIn 1500ms ease-out;
   position: relative;
+  pointer-events: none;
 }
 
 .logo__img {
@@ -238,6 +255,8 @@ body {
   left: 36.575%;
   z-index: 1000;
   animation: rotateIn 1500ms ease-out;
+  cursor: pointer;
+  pointer-events: all;
 }
 
 /* Nav bar */
@@ -351,10 +370,10 @@ body {
   margin-bottom: 8rem;
 }
 
-.section__about-text {
+.general-text--box {
   font-size: 2.2rem;
   /* padding-top: 18rem; */
-  padding: 10rem 5rem 10rem 5rem;
+  padding: 6rem 5rem 6rem 5rem;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.1);
 }
