@@ -70,7 +70,7 @@ body {
   cursor: pointer;
   border-radius: 100vw;
   transition: all 350ms;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .to-top:hover {
