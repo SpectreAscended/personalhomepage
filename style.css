@@ -64,18 +64,17 @@ body {
   right: 2rem;
   height: 5.5rem;
   width: 5.5rem;
-  transform: rotate(180deg);
-  background-image: url('./assets/tree-logo--inner.svg');
+  background-image: url('./assets/spectre\ designs\ logo--empty.svg');
   background-size: contain;
   z-index: 1000;
   cursor: pointer;
   border-radius: 100vw;
   transition: all 350ms;
+  opacity: 0.6;
 }
 
 .to-top:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  transform: rotate(300deg);
+  transform: rotate(60deg);
 }
 
 .heading-primary {
@@ -392,7 +391,7 @@ body {
 
 .spectre-logo__box {
   max-width: 25rem;
-  margin: 60rem auto 0;
+  margin: 40rem auto 0;
 }
 
 .spectre-logo__img {
