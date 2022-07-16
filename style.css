@@ -454,7 +454,15 @@ svg {
 
 .projects__link:link,
 .projects__link:visited {
+  display: inline-block;
   color: inherit;
   text-decoration: none;
   font-size: 2rem;
+  transition: all 250ms ease;
+}
+
+.projects__link:hover,
+.projects__link:active {
+  color: rgb(206, 203, 203);
+  transform: scaleX(1.05);
 }
