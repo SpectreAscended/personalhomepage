@@ -407,7 +407,7 @@ body {
   width: 100%;
 }
 
-.skills-box {
+.content-box {
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -450,4 +450,11 @@ body {
 
 svg {
   width: 5rem;
+}
+
+.projects__link:link,
+.projects__link:visited {
+  color: inherit;
+  text-decoration: none;
+  font-size: 2rem;
 }
