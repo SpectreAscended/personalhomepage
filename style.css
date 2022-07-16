@@ -310,7 +310,6 @@ body {
 
 .nav-bar__item {
   border-right: solid 2px var(--color-white);
-  padding: 1rem 2rem;
   cursor: pointer;
   /* transition: all 450ms; */
   position: relative;
@@ -344,6 +343,7 @@ body {
 
 .nav-bar__item a:link,
 .nav-bar__item a:visited {
+  padding: 1rem 2rem;
   display: inline-block;
   text-decoration: none;
   color: inherit;
