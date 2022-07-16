@@ -77,6 +77,11 @@ body {
   transform: rotate(60deg);
 }
 
+.to-top:active {
+  outline: solid 1rem rgba(255, 255, 255, 0.001);
+  outline-offset: 5px;
+}
+
 .heading-primary {
   font-family: 'Limelight', sans-serif;
   font-size: 7.5rem;
@@ -289,6 +294,10 @@ body {
   border: solid 2px var(--color-white);
   background-color: rgba(51, 51, 51, 0.8);
 }
+/* .nav-bar > * {
+  flex-basis: 100%;
+  text-align: center;
+} */
 
 @supports (backdrop-filter: blur(0.8rem)) or
   (-webkit-backdrop-filter: blur(0.8rem)) {
@@ -396,4 +405,49 @@ body {
 
 .spectre-logo__img {
   width: 100%;
+}
+
+.skills-box {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5rem;
+  padding: 6rem 5rem 6rem 5rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.skills-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+
+.icon-js {
+  fill: #f0db4f;
+}
+
+.icon-css {
+  fill: #3c99dc;
+}
+
+.icon-html {
+  fill: #e34c26;
+}
+
+.icon-react {
+  fill: #61dbfb;
+}
+
+.icon-git {
+  fill: #f1502f;
+}
+.icon-figma {
+  fill: purple;
+}
+
+svg {
+  width: 5rem;
 }

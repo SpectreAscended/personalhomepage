@@ -4,12 +4,12 @@ const toTop = document.querySelector('.to-top');
 const header = document.querySelector('header');
 const about = document.querySelector('.section__about');
 
-function addToTopBtnHandler() {}
+function addToTopBtnHandler() {
+  toTop.addEventListener('click', function () {
+    window.scrollTo(0, 0);
+  });
+}
 addToTopBtnHandler();
-
-toTop.addEventListener('click', function () {
-  window.scrollTo(0, 0);
-});
 
 let observer = new IntersectionObserver(entries => {
   console.log(entries);
