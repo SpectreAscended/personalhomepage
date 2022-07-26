@@ -91,6 +91,12 @@
   .section__about-text {
     padding-top: 10rem;
   }
+
+  .projects__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {

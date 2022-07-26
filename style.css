@@ -277,6 +277,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: 1000;
 }
 
 .header__nav {
@@ -410,6 +411,7 @@ body {
 .content-box {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: 5rem;
   padding: 6rem 5rem 6rem 5rem;
@@ -455,7 +457,7 @@ svg {
 .projects__container {
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: stretch;
 }
 
 .projects__link:link,
@@ -474,14 +476,41 @@ svg {
 }
 
 .projects__logo {
+  position: relative;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   max-width: 30rem;
   gap: 3rem;
-  justify-content: baseline;
+  justify-content: flex-end;
   font-size: 1.6rem;
+  padding: 2rem;
+  background-color: rgb(56, 55, 55);
+  border-radius: 2rem;
+  perspective: 180rem;
+  transition: transform 1000ms ease;
+  box-shadow: 0, 0, 0, 5rem rgba(0, 0, 0, 0.55);
 }
+
+/* .projects__logo--front {
+  backface-visibility: hidden;
+}
+
+.projects__logo--back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  backface-visibility: hidden;
+  transform: rotateY(-180deg);
+} */
+
+/* .projects__logo:hover {
+  transform: rotateY(180deg);
+} */
 
 .projects__logo-box {
   max-width: 30rem;
@@ -489,4 +518,10 @@ svg {
 
 .projects__logo-box img {
   width: 100%;
+  cursor: pointer;
+  transition: transform 250ms ease;
+}
+
+.projects__logo-box img:hover {
+  transform: scale(1.05);
 }
