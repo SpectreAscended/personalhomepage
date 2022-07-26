@@ -452,6 +452,12 @@ svg {
   width: 5rem;
 }
 
+.projects__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
 .projects__link:link,
 .projects__link:visited {
   display: inline-block;
@@ -465,4 +471,22 @@ svg {
 .projects__link:active {
   color: rgb(206, 203, 203);
   transform: scaleX(1.05);
+}
+
+.projects__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
+  gap: 3rem;
+  justify-content: baseline;
+  font-size: 1.6rem;
+}
+
+.projects__logo-box {
+  max-width: 30rem;
+}
+
+.projects__logo-box img {
+  width: 100%;
 }
