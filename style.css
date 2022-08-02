@@ -259,7 +259,7 @@ body {
   left: 36.575%;
   z-index: 1000;
   animation: rotateIn 1500ms ease-out;
-  cursor: pointer;
+  /* cursor: pointer; */
   pointer-events: all;
 }
 
