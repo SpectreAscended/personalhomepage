@@ -358,7 +358,7 @@ body {
 
 /* SECTION -- ABOUT */
 
-.section__about {
+.section {
   max-width: 120rem;
   padding-top: 6rem;
   margin: 40rem auto 0 auto;
@@ -366,12 +366,20 @@ body {
   overflow: hidden;
 }
 
-.section__about .heading-tertiary {
+.section .heading-tertiary {
   display: block;
   padding-left: 6rem;
   padding-bottom: 2rem;
-  animation: moveInRightBig 1400ms ease-out;
+  /* animation: moveInRightBig 1400ms ease-out; */
   /* transform-origin: bottom; */
+}
+
+.heading-slide {
+  opacity: 0;
+}
+
+.slide-in {
+  animation: moveInRightBig 1400ms ease-out;
 }
 
 .heading-box {
