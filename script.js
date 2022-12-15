@@ -13,7 +13,8 @@ function addToTopBtnHandler() {
 addToTopBtnHandler();
 
 const toTopObserver = new IntersectionObserver(entries => {
-  if (!entries[0].isIntersecting) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) {
     toTop.classList.remove('hidden');
   } else {
     toTop.classList.add('hidden');
@@ -31,15 +32,12 @@ nav.addEventListener('click', function (e) {
   }
 });
 
+// Section headings
 headingSlide.forEach(heading => {
   const headingSlideObserver = new IntersectionObserver(
     entries => {
       const [entry] = entries;
-      if (entry.isIntersecting) {
-        heading.classList.add('slide-in');
-        heading.style.opacity = 1;
-      }
-      // else headingAbout.classList.remove('slide-in');
+      if (entry.isIntersecting) heading.classList.add('slide-in');
     },
     {
       root: null,
