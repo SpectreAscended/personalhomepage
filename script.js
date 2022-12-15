@@ -3,6 +3,7 @@
 const toTop = document.querySelector('.to-top');
 const header = document.querySelector('header');
 const about = document.querySelector('.section__about');
+const nav = document.querySelector('.nav-bar');
 
 function addToTopBtnHandler() {
   toTop.addEventListener('click', function () {
@@ -21,3 +22,13 @@ let observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(header);
+
+// Nav bar links
+nav.addEventListener('click', function (e) {
+  e.preventDefault();
+  console.log(e.target);
+  if (e.target.classList.contains('nav-bar__link')) {
+    const id = e.target.getAttribute('href');
+    document.querySelector(id).scrollIntoView();
+  }
+});
