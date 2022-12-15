@@ -26,7 +26,6 @@ observer.observe(header);
 // Nav bar links
 nav.addEventListener('click', function (e) {
   e.preventDefault();
-  console.log(e.target);
   if (e.target.classList.contains('nav-bar__link')) {
     const id = e.target.getAttribute('href');
     document.querySelector(id).scrollIntoView();
