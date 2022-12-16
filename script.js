@@ -38,18 +38,17 @@ nav.addEventListener('click', function (e) {
 });
 
 // Section headings
-headingSlide.forEach(heading => {
-  const headingSlideObserver = new IntersectionObserver(
-    entries => {
-      const [entry] = entries;
-      if (!entry) return;
-      if (entry.isIntersecting) heading.classList.add('slide-in');
-    },
-    {
-      root: null,
-      threshold: 1,
-    }
-  );
+const headingSlideHandler = (entries, observer) => {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
 
-  headingSlideObserver.observe(heading);
+  entry.target.classList.add('slide-in');
+  observer.unobserve(entry.target);
+};
+
+const headingSlideObserver = new IntersectionObserver(headingSlideHandler, {
+  root: null,
+  threshold: 1,
 });
+
+headingSlide.forEach(heading => headingSlideObserver.observe(heading));
