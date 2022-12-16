@@ -42,6 +42,7 @@ headingSlide.forEach(heading => {
   const headingSlideObserver = new IntersectionObserver(
     entries => {
       const [entry] = entries;
+      if (!entry) return;
       if (entry.isIntersecting) heading.classList.add('slide-in');
     },
     {

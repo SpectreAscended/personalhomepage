@@ -534,3 +534,27 @@ svg {
 .projects__logo-box img:hover {
   transform: scale(1.05);
 }
+
+/* Contact */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.contact a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: color 200ms ease;
+}
+
+.contact a:hover,
+.contact a:active {
+  color: rgb(206, 203, 203);
+}
+
+.mail {
+  margin-right: 2rem;
+}
