@@ -26,9 +26,16 @@ toTopObserver.observe(header);
 // Nav bar links
 nav.addEventListener('click', function (e) {
   e.preventDefault();
+
+  const link = id => document.querySelector(id).scrollIntoView();
+
   if (e.target.classList.contains('nav-bar__link')) {
     const id = e.target.getAttribute('href');
-    document.querySelector(id).scrollIntoView();
+    link(id);
+  }
+  if (e.target.classList.contains('nav-bar__item')) {
+    const id = e.target.children[0].getAttribute('href');
+    link(id);
   }
 });
 
