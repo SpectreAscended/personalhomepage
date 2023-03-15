@@ -209,11 +209,7 @@ body {
     linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.53));
   background-blend-mode: darken;
   background-size: contain;
-  /* background-position-y: -40rem; */
-  /* background-position: top; */
   background-repeat: no-repeat;
-  height: 5000px;
-  padding: 0 20rem;
 }
 
 /* Header */
@@ -242,7 +238,6 @@ body {
 
 .logo__img--outer {
   width: 100%;
-
   display: inline-block;
   z-index: 1;
 }
@@ -259,7 +254,6 @@ body {
   left: 36.575%;
   z-index: 1000;
   animation: rotateIn 1500ms ease-out;
-  /* cursor: pointer; */
   pointer-events: all;
 }
 
@@ -289,16 +283,11 @@ body {
 .nav-bar {
   list-style: none;
   display: flex;
-  /* gap: 2rem; */
   font-size: 2.2rem;
   text-transform: uppercase;
   border: solid 2px var(--color-white);
   background-color: rgba(51, 51, 51, 0.8);
 }
-/* .nav-bar > * {
-  flex-basis: 100%;
-  text-align: center;
-} */
 
 @supports (backdrop-filter: blur(0.8rem)) or
   (-webkit-backdrop-filter: blur(0.8rem)) {
@@ -312,7 +301,6 @@ body {
 .nav-bar__item {
   border-right: solid 2px var(--color-white);
   cursor: pointer;
-  /* transition: all 450ms; */
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -408,10 +396,10 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.spectre-logo__box {
+/* .spectre-logo__box {
   max-width: 25rem;
   margin: 40rem auto 0;
-}
+} */
 
 .spectre-logo__img {
   width: 100%;
@@ -553,8 +541,4 @@ svg {
 .contact a:hover,
 .contact a:active {
   color: rgb(206, 203, 203);
-}
-
-.mail {
-  margin-right: 2.5rem;
 }
